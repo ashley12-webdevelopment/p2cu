@@ -1,0 +1,17 @@
+.row{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.row label{
+    color:var(--grey-800);
+    font-weight:700;
+    font-size:1.25rem;
+}
+
+.row p{
+    margin:0;
+    text-align:left;
+    color:var(--white);
+}

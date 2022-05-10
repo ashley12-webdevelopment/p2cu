@@ -1,0 +1,64 @@
+.hero{
+    min-height:calc(100vh - 150px);
+    background:linear-gradient(rgba(129, 197, 197,0.7), rgba(0, 83, 83, 0.7)), 
+    url('https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_800,q_auto,f_auto/v1652071443/P2CU/hero.jpg') center/cover; 
+
+    display:grid;
+    place-items:center;
+    text-align:center;
+
+    /* background-image: -webkit-image-set(
+        url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_800,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 768dpi,
+        url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1100,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 992dpi,
+        url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1800,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 1600dpi); */
+    /* background-image: image-set(
+            url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_800,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 768w,
+            url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1100,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 992w,
+            url("https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1800,q_auto,f_auto/v1652071443/P2CU/hero.jpg") 1600w); */
+}
+
+@media screen and (min-width:768px){
+    .hero{
+        background: linear-gradient(rgba(129, 197, 197, 0.7), rgba(0, 83, 83, 0.7)),
+                url('https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1000,q_auto,f_auto/v1652071443/P2CU/hero.jpg') center/cover;
+
+    }
+}
+@media screen and (min-width:992px){
+    .hero{
+        background: linear-gradient(rgba(129, 197, 197, 0.7), rgba(0, 83, 83, 0.7)),
+                url('https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1200,q_auto,f_auto/v1652071443/P2CU/hero.jpg') center/cover;
+
+    }
+}
+@media screen and (min-width:1200px){
+    .hero{
+        background: linear-gradient(rgba(129, 197, 197, 0.7), rgba(0, 83, 83, 0.7)),
+                url('https://res.cloudinary.com/degpymlnj/image/upload/c_scale,w_1500,q_auto,f_auto/v1652071443/P2CU/hero.jpg') center/cover;
+
+    }
+}
+
+
+.hero-banner{
+    color:var(--white);
+    border:10px solid white;
+    padding:1rem 2rem;
+    /* transition:var(--transition); */
+    width:var(--fluid-width);
+    max-width:var(--max-width);
+}
+
+.btn-hero{
+    text-transform: uppercase;
+    background:var(--white);
+    color:var(--primary-500);
+    padding:1rem 2rem;
+    border:1px solid var(--white);
+}
+
+.btn-hero:hover{
+    background:transparent;
+    color:var(--white);
+    /* border:1px solid var(--white); */
+}

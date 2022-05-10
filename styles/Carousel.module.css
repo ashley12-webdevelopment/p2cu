@@ -1,0 +1,130 @@
+.carousel{
+    background:url('../public/images/navbar-tile.svg') center;
+    padding:0;
+}
+
+
+.carousel-center{
+    position:relative;
+    max-width:none;
+}
+
+.slide-container{
+    width:100%;
+    height:16rem;
+    position:relative;
+    background:var(--white);
+}
+
+.slide{
+    /* padding:1rem 0; */
+    display:grid;
+    grid-template-columns: 1fr;
+    /* column-gap: 0.5rem; */
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    
+    opacity:0;
+    z-index:1;
+    transition:all 1s ease-in-out;
+}
+
+.slide img:nth-child(2){
+    display:none;
+}
+.slide img:nth-child(3){
+    display:none;
+}
+
+@media screen and (min-width:768px){
+    .slide{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slide img:nth-child(2) {
+        display: block;
+    }
+}
+@media screen and (min-width:992px){
+    .slide{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .slide img:nth-child(3) {
+        display: block;
+    }
+}
+
+
+.slide img{
+    height:16rem;
+}
+
+.slide-active{
+    opacity:1;
+    z-index:1;
+}
+
+
+.carousel-center button{
+    color:var(--white);
+    background:var(--black);
+    border-radius:50%;
+    padding:0.5rem;
+    display:grid;
+    place-items:center;
+    z-index:2;
+}
+
+.carousel-center button:hover {
+    color:var(--white);
+    background:var(--black)
+}
+
+
+.btn-prev{
+    position:absolute;
+    top:50%;
+    left:10px;
+    
+}
+
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.btn-more{
+    position:absolute;
+    bottom:1rem;
+    /* right:calc(50%-115px); */
+    right:-webkit-calc(50% - 115px/2);
+    right:-moz-calc(50% - 115px/2);
+    right:calc(50% - 115px/2);
+    text-transform: uppercase;
+    cursor:pointer;
+    border-radius: var(--borderRadius);
+    transition: var(--transition);
+    
+    
+
+    background:var(--white);
+    border:1px solid transparent;
+    color:var(--primary-500);
+
+    
+    font-weight:600;
+    
+    padding:0.5rem 2rem;
+    z-index:1;
+}
+
+.btn-more:hover{
+    background: transparent;
+    border:1px solid var(--white);
+    color:var(--white);
+   
+}

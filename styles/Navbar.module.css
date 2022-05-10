@@ -1,0 +1,44 @@
+.navbar{
+    box-shadow: var(--shadow-2);
+    /* position:fixed; */
+    top:0;
+    width:100%;
+    z-index:99;
+    background:var(--white);
+}
+
+.navbar-fixed{
+    position:fixed;
+}
+
+.nav-header{
+    padding:0.5rem 0;
+    /* background:url('../public/images/navbar-tile.svg') center; */
+    background:url('https://res.cloudinary.com/degpymlnj/image/upload/q_auto,f_auto/v1652070884/P2CU/navbar-tile.svg') center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav-header h2{
+    margin-bottom:0;
+    font-weight:700;
+    background:var(--primary-500);
+    border:2px solid white;
+    border-radius: var(--borderRadius);
+    padding:0 0.25rem;
+    /* border:1px solid blue; */
+}
+
+.nav-content{
+    padding:0rem 2rem;
+}
+.content-center{
+    display:flex;
+    justify-content: space-between;
+    /* align-items:center; */
+}
+
+.content-center img{
+    height:5rem;
+}

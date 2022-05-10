@@ -1,0 +1,25 @@
+.what-we-do{
+    background:var(--grey-50);
+}
+
+.underline{
+    margin:0 auto;
+}
+
+.what-we-do-center{
+    text-align:center;
+}
+
+.btn-event{
+    font-weight:600;
+    padding:1rem 2rem;
+}
+
+@media screen and (min-width:768px){
+    .what-we-do-center {
+        text-align: left;
+    }
+    .underline{
+        margin-left:0;
+    }
+}

@@ -1,0 +1,20 @@
+.event-form{
+    max-width:var(--max-width);
+    display:grid;   
+}
+
+.event-form label{
+    font-weight:600;
+}
+
+@media screen and (min-width:992px){
+    .event-form{
+        grid-template-columns: 1fr 1fr;
+        gap:0 2rem;
+    }
+
+    .btn-event{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

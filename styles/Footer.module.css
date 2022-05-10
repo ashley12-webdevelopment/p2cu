@@ -1,0 +1,37 @@
+.footer{
+    padding:1.5rem 2rem 1rem;
+    background:var(--primary-500);
+    color:var(--white);
+}
+
+.footer-center{
+    display:grid;
+    align-items:center;
+    gap:2rem 2rem;
+    justify-items:center;
+}
+
+.copy-rights{
+    color:var(--white);
+    text-align:center;
+    width:100%;
+    text-transform: capitalize;
+    margin-bottom:0rem;
+}
+
+@media screen and (min-width:768px){
+    .footer-center{
+        grid-template-columns: 1fr 1fr;
+        justify-items:start;
+    }
+
+    .contact-us{
+        justify-self:right;
+    }
+
+
+    .copy-rights{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
