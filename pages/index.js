@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
     await dbConnect();
     let carouselImages = await Photo.find({ includeInCarousel: true });
     carouselImages = JSON.parse(JSON.stringify(carouselImages));
-    return { props: { carouselImages } };
+    return { props: { carouselImages }, revalidate: 3600 };
   } catch (error) {
     return { props: { errorMsg: error.message } };
   }

@@ -106,6 +106,7 @@ export async function getStaticProps(context) {
     galleryImgs = JSON.parse(JSON.stringify(galleryImgs));
     return {
       props: { galleryImgs },
+      revalidate: 3600,
     };
   } catch (error) {
     console.log(`Gallery Page server error:` + error.message);

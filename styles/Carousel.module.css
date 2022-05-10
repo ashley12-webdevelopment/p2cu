@@ -124,7 +124,7 @@
 
 .btn-more:hover{
     background: transparent;
-    border:1px solid var(--white);
-    color:var(--white);
+    border:1px solid var(--primary-900);
+    color:var(--primary-900);
    
 }
